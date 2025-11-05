@@ -68,5 +68,7 @@ alterar_tudo.addEventListener('click', () => {
     paragrafo.style.color = gerarCorAleatoria()
     titulo.style.fontFamily = gerarFonteAleatoria()
     paragrafo.style.fontFamily = gerarFonteAleatoria()
+    console.log("Todos Elementos alterados para cores e fontes aleatórias!");
+    
 })
 
