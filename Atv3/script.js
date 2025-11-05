@@ -6,7 +6,7 @@ const cor_titulo = document.getElementById("cor_titulo")
 const cor_paragrafo = document.getElementById("cor_paragrafo")
 const fonte_titulo = document.getElementById("fonte_titulo")
 const fonte_paragrafo = document.getElementById("fonte_paragrafo")
-const alterar_tudo = document.getElementById("titulo")
+const alterar_tudo = document.getElementById("alterar_tudo")
 const fontes = ['Roboto', 'Elms Sans', 'Noto Sans Syriac Western', 
     'Momo Signature', 'Momo Trust Display', 'Momo Trust Sans', 'Stack Sans Notch', 
     'Raleway', 'Noto Sans', 'Oswald', 'Kanit', 'Open Sans', 
@@ -57,3 +57,16 @@ fonte_paragrafo.addEventListener('click', () => {
     paragrafo.style.fontFamily = gerarFonteAleatoria()
     console.log("Fonte alterada para " + gerarFonteAleatoria());
 })
+
+// ===============================
+// FUNÇÕES PARA ALTERAR TUDO
+// ===============================
+
+alterar_tudo.addEventListener('click', () => {
+    bodyHTML.style.backgroundColor = gerarCorAleatoria()
+    titulo.style.color = gerarCorAleatoria()
+    paragrafo.style.color = gerarCorAleatoria()
+    titulo.style.fontFamily = gerarFonteAleatoria()
+    paragrafo.style.fontFamily = gerarFonteAleatoria()
+})
+
